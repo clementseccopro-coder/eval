@@ -1,0 +1,42 @@
+header {
+  background-color: $black;
+  color: $text-light;
+  padding: 1.2rem 0;
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // le logo à gauche, nav à droite
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end; // bien coller les liens à droite
+      align-items: center;
+      gap: 2rem;
+
+      li a {
+        text-decoration: none;
+        color: rgba($text-light, 0.8);
+        font-size: 0.95rem;
+        transition: 0.3s;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
